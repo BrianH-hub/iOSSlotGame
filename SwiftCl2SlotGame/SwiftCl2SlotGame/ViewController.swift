@@ -12,12 +12,11 @@ var score: Int = 0
 
 class ViewController: UIViewController {
     @IBOutlet weak var scoreView: UILabel!
-    
     @IBOutlet weak var imgView1: UIImageView!
-    
     @IBOutlet weak var imgView2: UIImageView!
-    
     @IBOutlet weak var imgView3: UIImageView!
+    @IBOutlet weak var resetView: UIButton!
+    
     
     let imageNames = ["cherries", "dollarsign", "lemon", "grapes", "number7"]
     
@@ -44,6 +43,12 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    @IBAction func resetButton(_ sender: UIButton) {
+        score = 0
+        scoreView.text = "Score: " + String(score)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

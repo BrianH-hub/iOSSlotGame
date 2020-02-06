@@ -53,6 +53,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysk-d6-HEF">
+                                <rect key="frame" x="148" y="570" width="122" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                <state key="normal" title="Reset Game"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAN-4j-gAS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -65,6 +75,7 @@
                         <outlet property="imgView1" destination="ka9-hZ-B6c" id="nsQ-Im-yzg"/>
                         <outlet property="imgView2" destination="LoA-8t-bTx" id="sVg-xk-f2s"/>
                         <outlet property="imgView3" destination="on8-H4-nuC" id="5pj-K2-S6o"/>
+                        <outlet property="resetView" destination="ysk-d6-HEF" id="bcG-0i-gt6"/>
                         <outlet property="scoreView" destination="fcJ-WX-1qG" id="lpv-Vr-SxK"/>
                     </connections>
                 </viewController>
