@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var imgView1: UIImageView!
     
     @IBOutlet weak var imgView2: UIImageView!
@@ -20,7 +20,17 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonTapped(_ sender: UIButton) {
+        let randomImageName1 = imageNames.randomElement()
+        let randomImageName2 = imageNames.randomElement()
+        let randomImageName3 = imageNames.randomElement()
         
+        if let imageName1 = randomImageName1,
+            let imageName2 = randomImageName2,
+            let imageName3 = randomImageName3{
+            imgView1.image = UIImage(named: imageName1)
+            imgView2.image = UIImage(named: imageName2)
+            imgView3.image = UIImage(named: imageName3)
+        }
         
         
     }
@@ -28,7 +38,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
 }
 
