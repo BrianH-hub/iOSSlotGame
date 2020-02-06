@@ -8,7 +8,10 @@
 
 import UIKit
 
+var score: Int = 0
+
 class ViewController: UIViewController {
+    @IBOutlet weak var scoreView: UILabel!
     
     @IBOutlet weak var imgView1: UIImageView!
     
@@ -30,9 +33,16 @@ class ViewController: UIViewController {
             imgView1.image = UIImage(named: imageName1)
             imgView2.image = UIImage(named: imageName2)
             imgView3.image = UIImage(named: imageName3)
+            
+            if (imageName1 == imageName2 && imageName2 == imageName3) {
+                score += 5
+            }else if (imageName1 == imageName2 || imageName2 == imageName3 || imageName1 == imageName3){
+                score += 2
+                }
+            
+            scoreView.text = "Score: " + String(score)
+            
         }
-        
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

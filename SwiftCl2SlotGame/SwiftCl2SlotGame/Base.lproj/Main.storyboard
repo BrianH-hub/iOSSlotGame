@@ -46,8 +46,15 @@
                                 <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="scoreView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcJ-WX-1qG">
+                                <rect key="frame" x="142" y="231" width="131" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CnE-B2-t9K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CLN-ri-QdT"/>
                             <constraint firstItem="CnE-B2-t9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w8S-mU-Y2O"/>
@@ -58,6 +65,7 @@
                         <outlet property="imgView1" destination="ka9-hZ-B6c" id="nsQ-Im-yzg"/>
                         <outlet property="imgView2" destination="LoA-8t-bTx" id="sVg-xk-f2s"/>
                         <outlet property="imgView3" destination="on8-H4-nuC" id="5pj-K2-S6o"/>
+                        <outlet property="scoreView" destination="fcJ-WX-1qG" id="lpv-Vr-SxK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
